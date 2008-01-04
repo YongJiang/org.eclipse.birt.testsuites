@@ -72,7 +72,7 @@ public class Regression_79020 extends BaseTestCase
 		CellHandle cellHandle = (CellHandle) rowHandle.getCells( ).get( 0 );
 
 		assertEquals(
-				null, cellHandle.getProperty( StyleHandle.VERTICAL_ALIGN_PROP ) ); //$NON-NLS-1$
+				"baseline", cellHandle.getProperty( StyleHandle.VERTICAL_ALIGN_PROP ) ); //$NON-NLS-1$
 
 		rowHandle.setProperty( StyleHandle.VERTICAL_ALIGN_PROP, "bottom" ); //$NON-NLS-1$
 		assertEquals(
